@@ -43,6 +43,24 @@ export default function Home() {
         </div>
       </section>
 
+<section className="mb-16">
+  <h2 className="text-3xl font-bold mb-6">
+    Skills
+  </h2>
+
+  <div className="flex flex-wrap gap-3">
+    {["Swift", "SwiftUI", "UIKit", "React", "TypeScript"].map(skill => (
+      <span
+        key={skill}
+        className="bg-black text-white px-4 py-2 rounded-full text-sm"
+      >
+        {skill}
+      </span>
+    ))}
+  </div>
+</section>
+
+
       {/* CONTACT */}
       <section>
         <h2 className="text-3xl font-bold mb-4">
@@ -56,6 +74,7 @@ export default function Home() {
           GitHub: github.com/yourname
         </p>
       </section>
+
 
     </main>
   );
