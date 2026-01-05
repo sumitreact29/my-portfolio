@@ -116,7 +116,7 @@ function Hero() {
                 children: "Senior iOS & Product Engineer"
             }, void 0, false, {
                 fileName: "[project]/app/components/Hero.tsx",
-                lineNumber: 9,
+                lineNumber: 8,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].p, {
@@ -133,10 +133,25 @@ function Hero() {
                     duration: 0.5
                 },
                 className: "text-xl text-gray-600 dark:text-gray-400 mb-10",
-                children: "I build high-performance iOS applications using Swift & SwiftUI. My apps have reached 500,000+ users with 4+ star ratings on the App Store."
-            }, void 0, false, {
+                children: [
+                    "I build high-performance iOS applications using Swift & SwiftUI.",
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
+                        fileName: "[project]/app/components/Hero.tsx",
+                        lineNumber: 24,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                        className: "text-gray-500 dark:text-gray-500",
+                        children: "iOS-first engineer building mobile, web, and cross-platform products used by real users."
+                    }, void 0, false, {
+                        fileName: "[project]/app/components/Hero.tsx",
+                        lineNumber: 25,
+                        columnNumber: 9
+                    }, this)
+                ]
+            }, void 0, true, {
                 fileName: "[project]/app/components/Hero.tsx",
-                lineNumber: 18,
+                lineNumber: 17,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
@@ -157,7 +172,7 @@ function Hero() {
                         children: "View My Work"
                     }, void 0, false, {
                         fileName: "[project]/app/components/Hero.tsx",
-                        lineNumber: 34,
+                        lineNumber: 37,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -166,19 +181,19 @@ function Hero() {
                         children: "Contact Me"
                     }, void 0, false, {
                         fileName: "[project]/app/components/Hero.tsx",
-                        lineNumber: 41,
+                        lineNumber: 44,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/app/components/Hero.tsx",
-                lineNumber: 28,
+                lineNumber: 31,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/app/components/Hero.tsx",
-        lineNumber: 8,
+        lineNumber: 7,
         columnNumber: 5
     }, this);
 }
@@ -197,88 +212,97 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$re
 ;
 ;
 ;
-function ProjectCard({ title, description, tech, image, link }) {
-    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
+function ProjectCard({ title, subtitle, description, tech, image, link }) {
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].article, {
         whileHover: {
             y: -6
         },
         transition: {
-            duration: 0.3
+            duration: 0.25,
+            ease: "easeOut"
         },
-        className: "rounded-2xl border overflow-hidden bg-white dark:bg-gray-900",
+        className: "group rounded-2xl border border-gray-200 dark:border-gray-800 overflow-hidden bg-white dark:bg-gray-900",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
                 src: image,
                 alt: title,
-                className: "w-full h-56 object-cover"
+                className: "h-56 w-full object-cover"
             }, void 0, false, {
                 fileName: "[project]/app/components/ProjectCard.tsx",
-                lineNumber: 27,
+                lineNumber: 29,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "p-6",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                        className: "text-xl font-semibold mb-2",
+                        className: "text-xl font-semibold mb-1",
                         children: title
                     }, void 0, false, {
                         fileName: "[project]/app/components/ProjectCard.tsx",
-                        lineNumber: 30,
+                        lineNumber: 32,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                        className: "text-gray-600 dark:text-gray-400 text-sm mb-4",
-                        children: description
+                        className: "text-sm text-gray-500 mb-3",
+                        children: subtitle
                     }, void 0, false, {
                         fileName: "[project]/app/components/ProjectCard.tsx",
-                        lineNumber: 31,
+                        lineNumber: 33,
                         columnNumber: 9
                     }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "flex flex-wrap gap-2 mb-4",
-                        children: tech.map((t)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                className: "text-xs px-3 py-1 rounded-full bg-gray-100 dark:bg-gray-800",
-                                children: t
-                            }, t, false, {
-                                fileName: "[project]/app/components/ProjectCard.tsx",
-                                lineNumber: 37,
-                                columnNumber: 13
-                            }, this))
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                        className: "text-sm text-gray-600 dark:text-gray-400 mb-5 leading-relaxed",
+                        children: description
                     }, void 0, false, {
                         fileName: "[project]/app/components/ProjectCard.tsx",
                         lineNumber: 35,
                         columnNumber: 9
                     }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "flex flex-wrap gap-2 mb-5",
+                        children: tech.map((t)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                className: "text-xs px-3 py-1 rounded-full bg-gray-100 dark:bg-gray-800",
+                                children: t
+                            }, t, false, {
+                                fileName: "[project]/app/components/ProjectCard.tsx",
+                                lineNumber: 41,
+                                columnNumber: 13
+                            }, this))
+                    }, void 0, false, {
+                        fileName: "[project]/app/components/ProjectCard.tsx",
+                        lineNumber: 39,
+                        columnNumber: 9
+                    }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
                         href: link,
                         target: "_blank",
-                        className: "inline-flex items-center gap-2 text-sm font-medium hover:underline",
+                        className: "inline-flex items-center gap-2 text-sm font-medium group-hover:underline",
                         children: [
                             "View on App Store ",
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$external$2d$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__ExternalLink$3e$__["ExternalLink"], {
                                 size: 16
                             }, void 0, false, {
                                 fileName: "[project]/app/components/ProjectCard.tsx",
-                                lineNumber: 51,
+                                lineNumber: 55,
                                 columnNumber: 29
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/app/components/ProjectCard.tsx",
-                        lineNumber: 46,
+                        lineNumber: 50,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/app/components/ProjectCard.tsx",
-                lineNumber: 29,
+                lineNumber: 31,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/app/components/ProjectCard.tsx",
-        lineNumber: 22,
+        lineNumber: 24,
         columnNumber: 5
     }, this);
 }
@@ -294,34 +318,135 @@ __turbopack_context__.s([
 const projects = [
     {
         title: "Miles App",
-        description: "A universal rewards and travel platform used by thousands of users. Improved API performance and user retention.",
+        subtitle: "Travel, Shop & Earn Rewards",
+        description: "A large-scale universal rewards and travel platform. Optimized API performance to reduce data load times by 30% and implemented gamification-driven SwiftUI flows that increased user retention by 25%. Contributed to CI/CD automation for reliable releases.",
         tech: [
             "SwiftUI",
             "Combine",
-            "Firebase"
+            "REST APIs",
+            "Firebase",
+            "Fastlane",
+            "CI/CD"
         ],
-        image: "/images/miles.png",
-        link: "https://apps.apple.com/"
+        platform: [
+            "iOS",
+            "Android"
+        ],
+        image: "/images/demo.jpg",
+        link: "https://apps.apple.com/us/app/miles-travel-shop-get-cash/id1393913947"
     },
     {
         title: "Fitburn",
-        description: "A fitness-focused iOS app delivering personalized workout and health experiences.",
+        subtitle: "Real-Time Fitness Tracking",
+        description: "A real-time fitness and health tracking application with Firebase-backed live data synchronization. Implemented background processing for continuous tracking and improved overall app stability by 20% using performance-focused SwiftUI architecture.",
         tech: [
             "SwiftUI",
-            "REST APIs"
+            "Firebase",
+            "HealthKit",
+            "Background Tasks"
         ],
-        image: "/images/fitburn.png",
-        link: "https://apps.apple.com/"
+        image: "/images/demo.jpg",
+        link: "https://apps.apple.com/us/app/fitburn-watch/id6502515644"
     },
     {
         title: "Stored App",
-        description: "A smart storage and logistics app with real-time tracking and seamless UX.",
+        subtitle: "E-Commerce & Social Shopping",
+        description: "A production-grade e-commerce and social shopping platform with real-time updates and Firebase-powered push notifications. Achieved a 98% crash-free experience through memory optimization, efficient threading, and comprehensive XCTest-based testing.",
         tech: [
+            "Swift",
             "UIKit",
-            "Firebase"
+            "Firebase",
+            "REST APIs",
+            "XCTest"
         ],
-        image: "/images/placeholder.png",
-        link: "https://apps.apple.com/"
+        image: "/images/demo.jpg",
+        link: "https://apps.apple.com/in/app/stored-social-shopping/id1663518540"
+    },
+    {
+        title: "Soniq",
+        subtitle: "Music Discovery & Artist Tracking",
+        description: "A music discovery and tracking application built completely from scratch using SwiftUI. Integrated Apple MusicKit and Spotify APIs with a custom artist-tracking algorithm to deliver real-time notifications for new music releases.",
+        tech: [
+            "SwiftUI",
+            "Combine",
+            "MusicKit",
+            "Spotify APIs"
+        ],
+        image: "/images/demo.jpg",
+        link: "https://apps.apple.com/in/app/soniq-your-music-companion/id6744140818"
+    },
+    {
+        title: "Flocco",
+        subtitle: "IoT Grocery Automation",
+        description: "An IoT-enabled grocery automation application that reduced order processing time by 15%. Integrated Razorpay for secure in-app payments and ensured reliable real-time communication between mobile and backend systems.",
+        tech: [
+            "Swift",
+            "IoT",
+            "Payments",
+            "REST APIs"
+        ],
+        image: "/images/demo.jpg",
+        link: "https://apps.apple.com/in/app/flocco/id1629581523"
+    },
+    {
+        title: "Adawatie",
+        subtitle: "Multilingual E-Commerce Platform",
+        description: "A multilingual (Arabic-supported) e-commerce application with multiple payment gateway integrations. Improved in-app search performance by approximately 40% through optimized indexing and query strategies.",
+        tech: [
+            "Swift",
+            "UIKit",
+            "Localization",
+            "Payments"
+        ],
+        image: "/images/demo.jpg",
+        link: "https://apps.apple.com/in/app/adawatie/id1473815126"
+    },
+    {
+        title: "Meal ID",
+        subtitle: "Meal Prep & Nutrition Planner",
+        description: "A meal planning and nutrition tracking application focused on personalized meal prep and dietary organization. Contributed to UI improvements, data handling, and performance optimization for a smooth user experience.",
+        tech: [
+            "Swift",
+            "UIKit",
+            "Core Data"
+        ],
+        image: "/images/demo.jpg",
+        link: "https://apps.apple.com/us/app/meal-id-meal-prep-planner/id1504099975"
+    },
+    {
+        title: "Palace App",
+        subtitle: "Luxury Retail & Lifestyle Platform",
+        description: "A high-end retail and lifestyle application delivering curated content and shopping experiences. Focused on UI responsiveness, stability, and seamless API-driven content updates.",
+        tech: [
+            "Swift",
+            "UIKit",
+            "REST APIs"
+        ],
+        image: "/images/demo.jpg",
+        link: "https://apps.apple.com/gb/app/palaceapp/id1439058382"
+    },
+    {
+        title: "LilRequester",
+        subtitle: "Task & Request Management",
+        description: "A lightweight productivity application designed for managing requests and tasks efficiently. Improved app stability and usability through UI refinements and bug fixes.",
+        tech: [
+            "Swift",
+            "UIKit"
+        ],
+        image: "/images/demo.jpg",
+        link: "https://apps.apple.com/us/app/lil-requester/id1488416772"
+    },
+    {
+        title: "Dynamite Travel",
+        subtitle: "Travel Booking Platform",
+        description: "A travel booking and management application enabling users to explore and book travel experiences. Contributed to feature development, API integration, and performance improvements.",
+        tech: [
+            "Swift",
+            "UIKit",
+            "REST APIs"
+        ],
+        image: "/images/demo.jpg",
+        link: "https://apps.apple.com/us/app/dynamite-travel-1-0/id998736815"
     }
 ];
 }),

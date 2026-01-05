@@ -1,12 +1,12 @@
-// "use client";
+"use client";
 
 
-export type Platform =
-  | "iOS"
-  | "Android"
-  | "Web"
-  | "React Native"
-  | "Flutter";
+// export type Platform =
+//   | "iOS"
+//   | "Android"
+//   | "Web"
+//   | "React Native"
+//   | "Flutter";
 
 
 export type Project = {

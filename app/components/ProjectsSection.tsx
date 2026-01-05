@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { projects } from "./data/projects";
+import { projects } from "../data/projects";
 import ProjectCard from "./ProjectCard";
 
 const filters = ["All", "iOS", "Android", "Web", "React Native", "Flutter"];
