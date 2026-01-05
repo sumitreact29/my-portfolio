@@ -630,6 +630,62 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist
 var __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$components$2f$Navbar$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/app/components/Navbar.tsx [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$components$2f$Hero$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/app/components/Hero.tsx [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/framer-motion/dist/es/render/components/motion/proxy.mjs [app-client] (ecmascript)");
+// "use client";
+// import Navbar from "./Navbar";
+// import Hero from "./Hero";
+// import { motion } from "framer-motion";
+// export default function HeroSection() {
+//   return (
+//     <section className="relative overflow-hidden">
+//       {/* BACKGROUND IMAGE */}
+//       <div className="absolute inset-0 -z-10">
+//         <div
+//           className="
+//             absolute inset-0
+//             bg-[url('/images/hero-light.jpg')]
+//             dark:bg-[url('/images/hero-light.jpg')]
+//             bg-cover bg-center
+//             opacity-100 dark:opacity-100
+//           "
+//         />
+//         {/* GRADIENT MASK */}
+//         <div
+//           className="absolute inset-0 bg-gradient-to-b
+//           from-white/90 via-white/70 to-white
+//           dark:from-[#0B0B0C]/90 dark:via-[#0B0B0C]/70 dark:to-[#0B0B0C]"
+//         />
+//       </div>
+//       {/* CONTENT */}
+//       <div className="relative max-w-7xl mx-auto px-6">
+//         <Navbar />
+//         <div className="grid lg:grid-cols-2 gap-12 items-center py-24">
+//           <Hero />
+//           {/* PROFILE IMAGE */}
+//           <motion.div
+//             initial={{ opacity: 0, scale: 0.95 }}
+//             animate={{ opacity: 1, scale: 1 }}
+//             transition={{ delay: 0.2, duration: 0.6 }}
+//             className="hidden lg:flex justify-center"
+//           >
+//             <div className="relative">
+//               <img
+//                 src="/images/profile_Sam.png"
+//                 alt="Sumit Bhargav"
+//                 className="w-72 h-72 object-cover rounded-3xl shadow-2xl"
+//               />
+//               {/* SOFT GLOW */}
+//               <div
+//                 className="absolute -inset-6 rounded-3xl
+//                 bg-indigo-500/20 dark:bg-indigo-400/10
+//                 blur-3xl -z-10"
+//               />
+//             </div>
+//           </motion.div>
+//         </div>
+//       </div>
+//     </section>
+//   );
+// }
 "use client";
 ;
 ;
@@ -643,23 +699,23 @@ function HeroSection() {
                 className: "absolute inset-0 -z-10",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: " absolute inset-0 bg-[url('/images/hero-light.jpg')] dark:bg-[url('/images/hero-light.jpg')] bg-cover bg-center opacity-100 dark:opacity-100 "
+                        className: " absolute inset-0 bg-[url('/images/hero-light.jpg')] dark:bg-[url('/images/hero-light.jpg')] bg-cover bg-center "
                     }, void 0, false, {
                         fileName: "[project]/app/components/HeroSection.tsx",
-                        lineNumber: 22,
+                        lineNumber: 78,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "absolute inset-0 bg-gradient-to-b from-white/90 via-white/70 to-white dark:from-[#0B0B0C]/90 dark:via-[#0B0B0C]/70 dark:to-[#0B0B0C]"
+                        className: " absolute inset-0 bg-gradient-to-b from-white/90 via-white/75 to-white dark:from-[#0B0B0C]/90 dark:via-[#0B0B0C]/75 dark:to-[#0B0B0C] "
                     }, void 0, false, {
                         fileName: "[project]/app/components/HeroSection.tsx",
-                        lineNumber: 33,
+                        lineNumber: 88,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/app/components/HeroSection.tsx",
-                lineNumber: 11,
+                lineNumber: 76,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -667,17 +723,12 @@ function HeroSection() {
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$app$2f$components$2f$Navbar$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                         fileName: "[project]/app/components/HeroSection.tsx",
-                        lineNumber: 42,
+                        lineNumber: 100,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "grid lg:grid-cols-2 gap-12 items-center py-24",
+                        className: "grid lg:grid-cols-2 gap-14 items-center py-24",
                         children: [
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$app$2f$components$2f$Hero$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
-                                fileName: "[project]/app/components/HeroSection.tsx",
-                                lineNumber: 45,
-                                columnNumber: 11
-                            }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
                                 initial: {
                                     opacity: 0,
@@ -688,56 +739,67 @@ function HeroSection() {
                                     scale: 1
                                 },
                                 transition: {
-                                    delay: 0.2,
                                     duration: 0.6
                                 },
-                                className: "hidden lg:flex justify-center",
+                                className: "flex justify-center lg:justify-end order-1 lg:order-2",
                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                     className: "relative",
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
                                             src: "/images/profile_Sam.png",
                                             alt: "Sumit Bhargav",
-                                            className: "w-72 h-72 object-cover rounded-3xl shadow-2xl"
+                                            className: " w-40 h-40 sm:w-52 sm:h-52 lg:w-72 lg:h-72 object-cover rounded-3xl shadow-2xl "
                                         }, void 0, false, {
                                             fileName: "[project]/app/components/HeroSection.tsx",
-                                            lineNumber: 55,
+                                            lineNumber: 112,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "absolute -inset-6 rounded-3xl bg-indigo-500/20 dark:bg-indigo-400/10 blur-3xl -z-10"
+                                            className: " absolute -inset-6 rounded-3xl bg-indigo-500/20 dark:bg-indigo-400/10 blur-3xl -z-10 "
                                         }, void 0, false, {
                                             fileName: "[project]/app/components/HeroSection.tsx",
-                                            lineNumber: 62,
+                                            lineNumber: 126,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/app/components/HeroSection.tsx",
-                                    lineNumber: 54,
+                                    lineNumber: 111,
                                     columnNumber: 13
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/app/components/HeroSection.tsx",
-                                lineNumber: 48,
+                                lineNumber: 105,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "order-2 lg:order-1",
+                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$app$2f$components$2f$Hero$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
+                                    fileName: "[project]/app/components/HeroSection.tsx",
+                                    lineNumber: 140,
+                                    columnNumber: 13
+                                }, this)
+                            }, void 0, false, {
+                                fileName: "[project]/app/components/HeroSection.tsx",
+                                lineNumber: 139,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/app/components/HeroSection.tsx",
-                        lineNumber: 44,
+                        lineNumber: 102,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/app/components/HeroSection.tsx",
-                lineNumber: 41,
+                lineNumber: 99,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/app/components/HeroSection.tsx",
-        lineNumber: 9,
+        lineNumber: 74,
         columnNumber: 5
     }, this);
 }
