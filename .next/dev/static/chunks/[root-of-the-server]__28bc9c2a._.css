@@ -106,6 +106,7 @@
       --tw-gradient-to-position: 100%;
       --tw-leading: initial;
       --tw-font-weight: initial;
+      --tw-tracking: initial;
       --tw-shadow: 0 0 #0000;
       --tw-shadow-color: initial;
       --tw-shadow-alpha: 100%;
@@ -176,6 +177,7 @@
     --font-weight-medium: 500;
     --font-weight-semibold: 600;
     --font-weight-bold: 700;
+    --tracking-tight: -.025em;
     --leading-tight: 1.25;
     --leading-relaxed: 1.625;
     --radius-lg: .5rem;
@@ -564,6 +566,10 @@
     max-width: var(--container-xl);
   }
 
+  .cursor-default {
+    cursor: default;
+  }
+
   .flex-wrap {
     flex-wrap: wrap;
   }
@@ -669,8 +675,20 @@
     background-image: linear-gradient(var(--tw-gradient-stops));
   }
 
-  .bg-\[url\(\'\/bg\/hero-light\.png\'\)\] {
-    background-image: url("/bg/hero-light.png");
+  .bg-\[url\(\'\/Black_Banner\.png\'\)\] {
+    background-image: url("/Black_Banner.png");
+  }
+
+  .bg-\[url\(\'\/images\/Black_Banner\.png\'\)\] {
+    background-image: url("/images/Black_Banner.png");
+  }
+
+  .bg-\[url\(\'\/images\/hero-light\.jpg\'\)\] {
+    background-image: url("/images/hero-light.jpg");
+  }
+
+  .bg-\[url\(\'\/images\/hero-light\.png\'\)\] {
+    background-image: url("/images/hero-light.png");
   }
 
   .from-black\/50 {
@@ -839,6 +857,11 @@
     font-weight: var(--font-weight-semibold);
   }
 
+  .tracking-tight {
+    --tw-tracking: var(--tracking-tight);
+    letter-spacing: var(--tracking-tight);
+  }
+
   .text-black {
     color: var(--color-black);
   }
@@ -866,6 +889,14 @@
 
   .opacity-40 {
     opacity: .4;
+  }
+
+  .opacity-80 {
+    opacity: .8;
+  }
+
+  .opacity-100 {
+    opacity: 1;
   }
 
   .shadow-2xl {
@@ -899,6 +930,11 @@
     transition-duration: var(--tw-duration, var(--default-transition-duration));
   }
 
+  .duration-300 {
+    --tw-duration: .3s;
+    transition-duration: .3s;
+  }
+
   .duration-500 {
     --tw-duration: .5s;
     transition-duration: .5s;
@@ -909,6 +945,15 @@
       --tw-scale-x: 105%;
       --tw-scale-y: 105%;
       --tw-scale-z: 105%;
+      scale: var(--tw-scale-x) var(--tw-scale-y);
+    }
+  }
+
+  @media (hover: hover) {
+    .group-hover\:scale-110:is(:where(.group):hover *) {
+      --tw-scale-x: 110%;
+      --tw-scale-y: 110%;
+      --tw-scale-z: 110%;
       scale: var(--tw-scale-x) var(--tw-scale-y);
     }
   }
@@ -1036,8 +1081,26 @@
   }
 
   @media (prefers-color-scheme: dark) {
-    .dark\:bg-\[url\(\'\/bg\/hero-dark\.png\'\)\] {
-      background-image: url("/bg/hero-dark.png");
+    .dark\:bg-\[url\(\'\/bg\/hero-dark\.jpg\'\)\] {
+      background-image: url("/bg/hero-dark.jpg");
+    }
+  }
+
+  @media (prefers-color-scheme: dark) {
+    .dark\:bg-\[url\(\'\/images\/Black_Banner\.png\'\)\] {
+      background-image: url("/images/Black_Banner.png");
+    }
+  }
+
+  @media (prefers-color-scheme: dark) {
+    .dark\:bg-\[url\(\'\/images\/hero-dark\.jpg\'\)\] {
+      background-image: url("/images/hero-dark.jpg");
+    }
+  }
+
+  @media (prefers-color-scheme: dark) {
+    .dark\:bg-\[url\(\'\/images\/hero-light\.jpg\'\)\] {
+      background-image: url("/images/hero-light.jpg");
     }
   }
 
@@ -1108,6 +1171,18 @@
   @media (prefers-color-scheme: dark) {
     .dark\:opacity-25 {
       opacity: .25;
+    }
+  }
+
+  @media (prefers-color-scheme: dark) {
+    .dark\:opacity-80 {
+      opacity: .8;
+    }
+  }
+
+  @media (prefers-color-scheme: dark) {
+    .dark\:opacity-100 {
+      opacity: 1;
     }
   }
 
@@ -1221,6 +1296,11 @@ body {
 }
 
 @property --tw-font-weight {
+  syntax: "*";
+  inherits: false
+}
+
+@property --tw-tracking {
   syntax: "*";
   inherits: false
 }

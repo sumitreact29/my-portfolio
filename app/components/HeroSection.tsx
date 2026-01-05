@@ -7,22 +7,34 @@ import { motion } from "framer-motion";
 export default function HeroSection() {
   return (
     <section className="relative overflow-hidden">
-      
       {/* BACKGROUND IMAGE */}
       <div className="absolute inset-0 -z-10">
-        <div
+        {/* <div
           className="
             absolute inset-0
-            bg-[url('/bg/hero-light.png')]
-            dark:bg-[url('/bg/hero-dark.png')]
+            bg-[url('/images/hero-light.jpg')]
+            dark:bg-[url('/images/hero-dark.jpg')]
             bg-cover bg-center
             opacity-40 dark:opacity-25
           "
+        /> */}
+
+        <div
+          className="
+            absolute inset-0
+            bg-[url('/images/hero-light.jpg')]
+            dark:bg-[url('/images/hero-light.jpg')]
+            bg-cover bg-center
+            opacity-100 dark:opacity-100
+          "
         />
+
         {/* GRADIENT MASK */}
-        <div className="absolute inset-0 bg-gradient-to-b
+        <div
+          className="absolute inset-0 bg-gradient-to-b
           from-white/90 via-white/70 to-white
-          dark:from-[#0B0B0C]/90 dark:via-[#0B0B0C]/70 dark:to-[#0B0B0C]" />
+          dark:from-[#0B0B0C]/90 dark:via-[#0B0B0C]/70 dark:to-[#0B0B0C]"
+        />
       </div>
 
       {/* CONTENT */}
@@ -41,15 +53,17 @@ export default function HeroSection() {
           >
             <div className="relative">
               <img
-                src="/profile.jpg"
+                src="/images/profile_Sam.png"
                 alt="Sumit Bhargav"
                 className="w-72 h-72 object-cover rounded-3xl shadow-2xl"
               />
 
               {/* SOFT GLOW */}
-              <div className="absolute -inset-6 rounded-3xl
+              <div
+                className="absolute -inset-6 rounded-3xl
                 bg-indigo-500/20 dark:bg-indigo-400/10
-                blur-3xl -z-10" />
+                blur-3xl -z-10"
+              />
             </div>
           </motion.div>
         </div>
