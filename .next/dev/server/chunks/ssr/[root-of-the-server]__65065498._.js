@@ -63,7 +63,7 @@ const projects = [
             "iOS",
             "Android"
         ],
-        image: "/images/demo.jpg",
+        image: "/images/Img1.jpg",
         link: "https://apps.apple.com/in/app/stored-social-shopping/id1663518540"
     },
     {
@@ -97,7 +97,7 @@ const projects = [
             "Android",
             "Web"
         ],
-        image: "/images/demo.jpg",
+        image: "/images/Img1.jpg",
         link: "https://apps.apple.com/in/app/flocco/id1629581523"
     },
     {
@@ -129,7 +129,7 @@ const projects = [
         platform: [
             "iOS"
         ],
-        image: "/images/demo.jpg",
+        image: "/images/Img2.jpg",
         link: "https://apps.apple.com/us/app/meal-id-meal-prep-planner/id1504099975"
     },
     {
@@ -145,7 +145,7 @@ const projects = [
             "iOS",
             "Android"
         ],
-        image: "/images/demo.jpg",
+        image: "/images/Img3.jpg",
         link: "https://apps.apple.com/gb/app/palaceapp/id1439058382"
     },
     {
@@ -160,7 +160,7 @@ const projects = [
             "iOS",
             "Android"
         ],
-        image: "/images/demo.jpg",
+        image: "/images/Img4.jpg",
         link: "https://apps.apple.com/us/app/lil-requester/id1488416772"
     },
     {
@@ -176,7 +176,7 @@ const projects = [
             "iOS",
             "Android"
         ],
-        image: "/images/demo.jpg",
+        image: "/images/Img5.jpg",
         link: "https://apps.apple.com/us/app/dynamite-travel-1-0/id998736815"
     }
 ];
