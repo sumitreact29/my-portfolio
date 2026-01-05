@@ -1,18 +1,19 @@
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
-import ProjectCard from "./components/ProjectCard";
-import { projects } from "./data/projects";
+import ProjectsSection from "./components/ProjectsSection";
 
 export default function Home() {
   return (
-    // <main className="max-w-6xl mx-auto px-6">
-    <main className="max-w-6xl mx-auto px-6 md:px-8">
+    <main className="w-full px-6 md:px-[50px]">
       <Navbar />
       <Hero />
 
       {/* Platforms & Capabilities */}
-      <section className="py-24 max-w-4xl">
-        <h2 className="text-3xl font-bold mb-10">Platforms & Capabilities</h2>
+          <section className="w-full">
+          
+        <h2 className="text-3xl font-bold mb-10">
+          Platforms & Capabilities
+        </h2>
 
         <div className="grid md:grid-cols-2 gap-8">
           <div>
@@ -26,7 +27,9 @@ export default function Home() {
           </div>
 
           <div>
-            <h3 className="text-xl font-semibold mb-2">Android Development</h3>
+            <h3 className="text-xl font-semibold mb-2">
+              Android Development
+            </h3>
             <p className="text-gray-600 dark:text-gray-400">
               Native Android apps using Java/Kotlin, modular architecture, REST
               APIs, and Firebase.
@@ -44,7 +47,9 @@ export default function Home() {
           </div>
 
           <div>
-            <h3 className="text-xl font-semibold mb-2">Web Applications</h3>
+            <h3 className="text-xl font-semibold mb-2">
+              Web Applications
+            </h3>
             <p className="text-gray-600 dark:text-gray-400">
               Modern web apps using React, Next.js, Tailwind CSS, and SEO best
               practices.
@@ -54,25 +59,21 @@ export default function Home() {
       </section>
 
       {/* WORK */}
-      <section id="work" className="py-24">
-        <h2 className="text-3xl font-bold mb-12">Selected Work</h2>
+      <ProjectsSection />
 
-        <div className="grid md:grid-cols-3 gap-8">
-          {projects.map((project) => (
-            <ProjectCard key={project.title} {...project} />
-          ))}
-        </div>
-      </section>
+      {/* Freelance CTA */}
+      {/* <section className="max-w-6xl mx-auto py-24"> */}
+                  <section className="w-full">
 
-      {/* Freelance-Focused CTA */}
-      <section className="py-24 max-w-2xl">
-        <h2 className="text-3xl font-bold mb-4">Available for Contract Work</h2>
+        <h2 className="text-3xl font-bold mb-4">
+          Available for Contract Work
+        </h2>
 
-        <p className="text-gray-600 dark:text-gray-400 mb-6 leading-relaxed">
-          I help startups and teams build reliable, scalable iOS applications —
-          from early MVPs to large-scale production apps. If you’re looking for
-          a senior iOS engineer who understands both product and performance,
-          let’s talk.
+        <p className="text-gray-600 dark:text-gray-400 mb-6 leading-relaxed max-w-3xl">
+          I help startups and teams build reliable, scalable mobile and web
+          applications — from early MVPs to large-scale production apps. If
+          you’re looking for a senior engineer who understands both product and
+          performance, let’s talk.
         </p>
 
         <a
@@ -84,14 +85,25 @@ export default function Home() {
       </section>
 
       {/* CONTACT */}
-      <section id="contact" className="py-24 max-w-xl">
-        <h2 className="text-3xl font-bold mb-6">Let’s Work Together</h2>
-        <p className="text-gray-600 dark:text-gray-400 mb-6">
-          Looking to build or improve an iOS app? I’m available for contract
-          work and collaborations.
-        </p>
+      <section
+        id="contact"
+        className="max-w-6xl mx-auto py-24"
+      >
+        
+        <div className="max-w-xl">
+          <h2 className="text-3xl font-bold mb-6">
+            Let’s Work Together
+          </h2>
 
-        <p className="font-medium">📧 sumitbhargav2994@gmail.com</p>
+          <p className="text-gray-600 dark:text-gray-400 mb-6">
+            Looking to build or improve a product? I’m available for contract
+            work and collaborations.
+          </p>
+
+          <p className="font-medium">
+            📧 sumitbhargav2994@gmail.com
+          </p>
+        </div>
       </section>
     </main>
   );

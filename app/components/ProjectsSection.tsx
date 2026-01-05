@@ -12,9 +12,7 @@ export default function ProjectsSection() {
   const filteredProjects =
     activeFilter === "All"
       ? projects
-      : projects.filter((project) =>
-          project.platform.includes(activeFilter)
-        );
+      : projects.filter((project) => project.platform.includes(activeFilter));
 
   return (
     <section className="py-24">
