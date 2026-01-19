@@ -1,28 +1,49 @@
-[00:00:00.530] Server  LOG     ✓ Ready in 389ms
-[00:00:00.754] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:07:23.897] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:08:22.282] Server  LOG     ✓ Compiled in 19ms
-[00:09:53.292] Server  LOG     ✓ Compiled in 21ms
-[00:10:38.508] Server  LOG     ✓ Compiled in 24ms
-[00:10:54.998] Server  LOG     ✓ Compiled in 16ms
-[00:11:08.508] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:11:11.534] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:11:27.094] Server  LOG     ✓ Compiled in 26ms
-[00:11:51.274] Server  LOG     ✓ Compiled in 11ms
-[00:12:12.598] Server  LOG     ✓ Compiled in 17ms
-[00:12:41.262] Server  LOG     ✓ Compiled in 14ms
-[00:12:50.398] Server  LOG     ✓ Compiled in 22ms
-[00:13:02.966] Server  LOG     ✓ Compiled in 21ms
-[00:13:25.025] Server  LOG     ✓ Compiled in 30ms
-[00:15:19.081] Server  LOG     ✓ Compiled in 26ms
-[00:15:47.045] Server  LOG     ✓ Compiled in 15ms
-[00:16:18.904] Server  LOG     ✓ Compiled in 20ms
-[00:19:04.620] Server  LOG     ✓ Compiled in 178ms
-[00:20:43.776] Server  LOG     ✓ Compiled in 29ms
-[00:20:58.002] Server  LOG     ✓ Compiled in 12ms
-[00:21:02.555] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:21:05.619] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:25:30.768] Server  LOG     ✓ Compiled in 16ms
-[00:31:23.740] Server  LOG     ✓ Compiled in 45ms
-[00:31:31.205] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:31:33.546] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:00.773] Server  LOG     ✓ Ready in 589ms
+[00:00:04.690] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:08.605] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:13.631] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:13.745] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <RedirectErrorBoundary router={{...}}>
+      <InnerLayoutRouter url="/" tree={[...]} params={{}} cacheNode={{rsc:<Fragment>, ...}} segmentPath={[...]} ...>
+        <SegmentViewNode type="page" pagePath="page.tsx">
+          <SegmentTrieNode>
+          <Home>
+            <main className="w-full px-...">
+              <HeroSection>
+                <section className="relative o...">
+                  <div>
+                  <div className="relative m...">
+                    <Navbar>
+                    <div className="grid lg:gr...">
+                      <motion.div>
+                      <div className="order-2 lg...">
+                        <Hero>
+                          <section className="py-24 max-...">
+                            <motion.h1 initial={{opacity:0,y:20}} animate={{opacity:1,y:0}} transition={{duration:0.5}} ...>
+                              <h1
+                                className="text-5xl md:text-6xl font-bold leading-tight mb-6"
+                                style={{
++                                 opacity: 0
++                                 transform: "translateY(20px)"
+                                }}
+                                ref={function useMotionRef.useCallback}
+                              >
++                               {"Senior iOS & Product Engineer"}
+                            ...
+              ...
+        ...
+      ...
+
+[00:00:16.199] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold

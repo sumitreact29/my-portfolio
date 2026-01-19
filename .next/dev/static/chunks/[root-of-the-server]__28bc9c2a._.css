@@ -695,20 +695,8 @@
     background-image: linear-gradient(var(--tw-gradient-stops));
   }
 
-  .bg-\[url\(\'\/Black_Banner\.png\'\)\] {
-    background-image: url("/Black_Banner.png");
-  }
-
-  .bg-\[url\(\'\/images\/Black_Banner\.png\'\)\] {
-    background-image: url("/images/Black_Banner.png");
-  }
-
   .bg-\[url\(\'\/images\/hero-light\.jpg\'\)\] {
     background-image: url("/images/hero-light.jpg");
-  }
-
-  .bg-\[url\(\'\/images\/hero-light\.png\'\)\] {
-    background-image: url("/images/hero-light.png");
   }
 
   .from-black\/50 {
@@ -920,14 +908,6 @@
   .antialiased {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-  }
-
-  .opacity-40 {
-    opacity: .4;
-  }
-
-  .opacity-80 {
-    opacity: .8;
   }
 
   .opacity-100 {
@@ -1158,24 +1138,6 @@
   }
 
   @media (prefers-color-scheme: dark) {
-    .dark\:bg-\[url\(\'\/bg\/hero-dark\.jpg\'\)\] {
-      background-image: url("/bg/hero-dark.jpg");
-    }
-  }
-
-  @media (prefers-color-scheme: dark) {
-    .dark\:bg-\[url\(\'\/images\/Black_Banner\.png\'\)\] {
-      background-image: url("/images/Black_Banner.png");
-    }
-  }
-
-  @media (prefers-color-scheme: dark) {
-    .dark\:bg-\[url\(\'\/images\/hero-dark\.jpg\'\)\] {
-      background-image: url("/images/hero-dark.jpg");
-    }
-  }
-
-  @media (prefers-color-scheme: dark) {
     .dark\:bg-\[url\(\'\/images\/hero-light\.jpg\'\)\] {
       background-image: url("/images/hero-light.jpg");
     }
@@ -1250,18 +1212,6 @@
   @media (prefers-color-scheme: dark) {
     .dark\:text-white {
       color: var(--color-white);
-    }
-  }
-
-  @media (prefers-color-scheme: dark) {
-    .dark\:opacity-25 {
-      opacity: .25;
-    }
-  }
-
-  @media (prefers-color-scheme: dark) {
-    .dark\:opacity-80 {
-      opacity: .8;
     }
   }
 
