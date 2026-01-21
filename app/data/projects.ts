@@ -19,7 +19,7 @@ export const projects = [
       "A large-scale universal rewards and travel platform. Optimized API performance to reduce data load times by 30% and implemented gamification-driven SwiftUI flows that increased user retention by 25%. Contributed to CI/CD automation for reliable releases.",
     tech: ["SwiftUI", "Combine", "REST APIs", "Firebase", "Fastlane", "CI/CD"],
     platform: ["iOS"],
-    image: "/images/demo.jpg",
+    image: "/images/Img1.jpg",
     link: "https://apps.apple.com/us/app/miles-travel-shop-get-cash/id1393913947",
   },
   {
@@ -69,7 +69,7 @@ export const projects = [
       "A multilingual (Arabic-supported) e-commerce application with multiple payment gateway integrations. Improved in-app search performance by approximately 40% through optimized indexing and query strategies.",
     tech: ["Swift", "UIKit", "Localization", "Payments"],
     platform: ["iOS", "Android"],
-    image: "/images/demo.jpg",
+    image: "/images/Img1.jpg",
     link: "https://apps.apple.com/in/app/adawatie/id1473815126",
   },
   {

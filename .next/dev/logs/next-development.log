@@ -1,49 +1,8 @@
-[00:00:00.773] Server  LOG     ✓ Ready in 589ms
-[00:00:04.690] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:08.605] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:13.631] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:13.745] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
-
-- A server/client branch `if (typeof window !== 'undefined')`.
-- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
-- Date formatting in a user's locale which doesn't match the server.
-- External changing data without sending a snapshot of it along with the HTML.
-- Invalid HTML tag nesting.
-
-It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
-
-%s%s https://react.dev/link/hydration-mismatch 
-
-  ...
-    <RedirectErrorBoundary router={{...}}>
-      <InnerLayoutRouter url="/" tree={[...]} params={{}} cacheNode={{rsc:<Fragment>, ...}} segmentPath={[...]} ...>
-        <SegmentViewNode type="page" pagePath="page.tsx">
-          <SegmentTrieNode>
-          <Home>
-            <main className="w-full px-...">
-              <HeroSection>
-                <section className="relative o...">
-                  <div>
-                  <div className="relative m...">
-                    <Navbar>
-                    <div className="grid lg:gr...">
-                      <motion.div>
-                      <div className="order-2 lg...">
-                        <Hero>
-                          <section className="py-24 max-...">
-                            <motion.h1 initial={{opacity:0,y:20}} animate={{opacity:1,y:0}} transition={{duration:0.5}} ...>
-                              <h1
-                                className="text-5xl md:text-6xl font-bold leading-tight mb-6"
-                                style={{
-+                                 opacity: 0
-+                                 transform: "translateY(20px)"
-                                }}
-                                ref={function useMotionRef.useCallback}
-                              >
-+                               {"Senior iOS & Product Engineer"}
-                            ...
-              ...
-        ...
-      ...
-
-[00:00:16.199] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:00.661] Server  LOG     ✓ Ready in 496ms
+[00:00:02.266] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:04.116] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:08.440] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:16.327] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:17.199] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:18.003] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:36.892] Server  LOG     ✓ Compiled in 209ms

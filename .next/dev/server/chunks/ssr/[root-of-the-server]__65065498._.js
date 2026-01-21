@@ -29,7 +29,7 @@ const projects = [
         platform: [
             "iOS"
         ],
-        image: "/images/demo.jpg",
+        image: "/images/Img1.jpg",
         link: "https://apps.apple.com/us/app/miles-travel-shop-get-cash/id1393913947"
     },
     {
@@ -114,7 +114,7 @@ const projects = [
             "iOS",
             "Android"
         ],
-        image: "/images/demo.jpg",
+        image: "/images/Img1.jpg",
         link: "https://apps.apple.com/in/app/adawatie/id1473815126"
     },
     {
