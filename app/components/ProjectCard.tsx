@@ -25,14 +25,17 @@ export default function ProjectCard({
       whileHover={{ y: -8 }}
       transition={{ duration: 0.3, ease: "easeOut" }}
       className="
-        group relative rounded-3xl overflow-hidden
-        bg-white dark:bg-[#111113]
-        border border-gray-200 dark:border-white/5
-        shadow-sm hover:shadow-xl dark:shadow-black/40
+        group relative overflow-hidden rounded-3xl
+        bg-[#0f121a]/80
+        border border-white/10
+        shadow-[0_20px_60px_rgba(6,10,20,0.5)]
+        hover:border-white/25 transition
+        max-w-[540px] mx-auto
+        min-h-[520px]
       "
     >
       {/* IMAGE */}
-      <div className="relative h-64 overflow-hidden">
+      <div className="relative h-72 lg:h-80 overflow-hidden">
         <img
           src={image}
           alt={title}
@@ -48,22 +51,26 @@ export default function ProjectCard({
           className="
             absolute inset-0
             bg-gradient-to-t
-            from-black/50 via-black/10 to-transparent
+            from-black/70 via-black/20 to-transparent
           "
         />
       </div>
 
       {/* CONTENT */}
       <div className="p-6">
-        <h3 className="text-xl font-semibold mb-1 text-black dark:text-[#F5F5F7]">
+        <div className="mb-3 inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-3 py-1 text-[11px] uppercase tracking-[0.2em] text-white/60">
+          Featured build
+        </div>
+
+        <h3 className="text-xl font-semibold mb-1 text-white">
           {title}
         </h3>
 
-        <p className="text-sm text-gray-500 dark:text-[#A1A1AA] mb-4">
+        <p className="text-sm text-white/60 mb-4">
           {subtitle}
         </p>
 
-        <p className="text-sm text-gray-600 dark:text-gray-400 mb-5 leading-relaxed">
+        <p className="text-sm text-white/70 mb-5 leading-relaxed">
           {description}
         </p>
 
@@ -73,8 +80,8 @@ export default function ProjectCard({
               key={t}
               className="
                 text-xs px-3 py-1 rounded-full
-                bg-gray-100 dark:bg-white/5
-                text-gray-700 dark:text-gray-300
+                bg-white/5
+                text-white/70
               "
             >
               {t}
@@ -88,8 +95,8 @@ export default function ProjectCard({
           className="
             inline-flex items-center gap-2
             text-sm font-medium
-            text-black dark:text-[#F5F5F7]
-            group-hover:underline
+            text-white
+            group-hover:text-white/80 transition
           "
         >
           View on App Store <ExternalLink size={16} />

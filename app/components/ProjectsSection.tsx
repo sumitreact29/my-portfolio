@@ -15,8 +15,19 @@ export default function ProjectsSection() {
       : projects.filter((project) => project.platform.includes(activeFilter));
 
   return (
-    <section className="py-24">
-      <h2 className="text-3xl font-bold mb-10">Selected Work</h2>
+    <section id="work" className="py-24">
+      <div className="flex flex-col gap-4 mb-10">
+        <p className="text-xs uppercase tracking-[0.3em] text-white/50">
+          Case Studies
+        </p>
+        <h2 className="text-3xl sm:text-4xl font-semibold text-white">
+          AI-era products, shipped and scaling
+        </h2>
+        <p className="text-white/60 max-w-2xl">
+          A selection of apps and platforms I helped ship, optimize, and grow
+          with a product-first mindset.
+        </p>
+      </div>
 
       {/* FILTER BUTTONS */}
       <div className="flex flex-wrap gap-3 mb-12">
@@ -27,8 +38,8 @@ export default function ProjectsSection() {
             className={`px-4 py-2 rounded-full text-sm border transition
               ${
                 activeFilter === filter
-                  ? "bg-black text-white dark:bg-white dark:text-black"
-                  : "border-gray-300 dark:border-gray-700 text-gray-600 dark:text-gray-400 hover:text-black dark:hover:text-white"
+                  ? "bg-white text-black"
+                  : "border-white/15 text-white/60 hover:text-white hover:border-white/40"
               }`}
           >
             {filter}
@@ -37,7 +48,7 @@ export default function ProjectsSection() {
       </div>
 
       {/* PROJECT GRID */}
-      <div className="grid md:grid-cols-2 gap-10">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
         {filteredProjects.map((project) => (
           <ProjectCard key={project.title} {...project} />
         ))}
