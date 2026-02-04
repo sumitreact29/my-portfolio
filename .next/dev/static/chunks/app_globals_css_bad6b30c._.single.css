@@ -399,10 +399,6 @@
     top: calc(var(--spacing) * -40);
   }
 
-  .top-3 {
-    top: calc(var(--spacing) * 3);
-  }
-
   .top-4 {
     top: calc(var(--spacing) * 4);
   }
@@ -453,10 +449,6 @@
 
   .mt-6 {
     margin-top: calc(var(--spacing) * 6);
-  }
-
-  .mt-8 {
-    margin-top: calc(var(--spacing) * 8);
   }
 
   .mt-10 {
@@ -539,10 +531,6 @@
     min-height: 85vh;
   }
 
-  .min-h-\[520px\] {
-    min-height: 520px;
-  }
-
   .w-2 {
     width: calc(var(--spacing) * 2);
   }
@@ -583,10 +571,6 @@
     max-width: var(--container-7xl);
   }
 
-  .max-w-\[540px\] {
-    max-width: 540px;
-  }
-
   .max-w-xl {
     max-width: var(--container-xl);
   }
@@ -602,10 +586,6 @@
 
   .cursor-default {
     cursor: default;
-  }
-
-  .grid-cols-1 {
-    grid-template-columns: repeat(1, minmax(0, 1fr));
   }
 
   .grid-cols-2 {
@@ -1053,10 +1033,6 @@
     letter-spacing: var(--tracking-tight);
   }
 
-  .whitespace-nowrap {
-    white-space: nowrap;
-  }
-
   .text-black {
     color: var(--color-black);
   }
@@ -1136,10 +1112,6 @@
   .antialiased {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-  }
-
-  .opacity-40 {
-    opacity: .4;
   }
 
   .opacity-70 {
@@ -1245,18 +1217,6 @@
   }
 
   @media (hover: hover) {
-    .hover\:border-white\/30:hover {
-      border-color: #ffffff4d;
-    }
-
-    @supports (color: color-mix(in lab, red, red)) {
-      .hover\:border-white\/30:hover {
-        border-color: color-mix(in oklab, var(--color-white) 30%, transparent);
-      }
-    }
-  }
-
-  @media (hover: hover) {
     .hover\:border-white\/40:hover {
       border-color: #fff6;
     }
@@ -1275,24 +1235,6 @@
   }
 
   @media (min-width: 40rem) {
-    .sm\:top-4 {
-      top: calc(var(--spacing) * 4);
-    }
-  }
-
-  @media (min-width: 40rem) {
-    .sm\:mt-10 {
-      margin-top: calc(var(--spacing) * 10);
-    }
-  }
-
-  @media (min-width: 40rem) {
-    .sm\:block {
-      display: block;
-    }
-  }
-
-  @media (min-width: 40rem) {
     .sm\:h-56 {
       height: calc(var(--spacing) * 56);
     }
@@ -1301,36 +1243,6 @@
   @media (min-width: 40rem) {
     .sm\:w-56 {
       width: calc(var(--spacing) * 56);
-    }
-  }
-
-  @media (min-width: 40rem) {
-    .sm\:grid-cols-2 {
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-  }
-
-  @media (min-width: 40rem) {
-    .sm\:px-5 {
-      padding-inline: calc(var(--spacing) * 5);
-    }
-  }
-
-  @media (min-width: 40rem) {
-    .sm\:px-6 {
-      padding-inline: calc(var(--spacing) * 6);
-    }
-  }
-
-  @media (min-width: 40rem) {
-    .sm\:py-20 {
-      padding-block: calc(var(--spacing) * 20);
-    }
-  }
-
-  @media (min-width: 40rem) {
-    .sm\:py-24 {
-      padding-block: calc(var(--spacing) * 24);
     }
   }
 
@@ -1571,6 +1483,26 @@ body {
   }
 }
 
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes orbit {
+  0% {
+    transform: translate(-50%, -50%)rotate(0);
+  }
+
+  100% {
+    transform: translate(-50%, -50%)rotate(360deg);
+  }
+}
+
 @keyframes pulse-soft {
   0%, 100% {
     opacity: .55;
@@ -1591,6 +1523,11 @@ body {
   animation: 18s linear infinite grid-drift;
   -webkit-mask-image: radial-gradient(circle at 50% 40%, #000000b3, #0000 70%);
   mask-image: radial-gradient(circle at 50% 40%, #000000b3, #0000 70%);
+}
+
+.scanlines {
+  mix-blend-mode: soft-light;
+  background-image: repeating-linear-gradient(#ffffff0a, #ffffff0a 1px, #0000 1px 6px);
 }
 
 .glow-orb {
@@ -1620,6 +1557,40 @@ body {
   position: absolute;
   inset: 0;
   transform: translateX(-120%);
+}
+
+.marquee {
+  width: max-content;
+  animation: 18s linear infinite marquee;
+  display: flex;
+}
+
+.marquee-mask {
+  -webkit-mask-image: linear-gradient(90deg, #0000, #000000e6 12% 88%, #0000);
+  mask-image: linear-gradient(90deg, #0000, #000000e6 12% 88%, #0000);
+}
+
+.orbit {
+  border: 1px dashed #ffffff14;
+  border-radius: 999px;
+  width: 120%;
+  height: 120%;
+  animation: 26s linear infinite orbit;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+.orbit:after {
+  content: "";
+  background: var(--accent-2);
+  border-radius: 999px;
+  width: 8px;
+  height: 8px;
+  position: absolute;
+  top: 12%;
+  right: 20%;
+  box-shadow: 0 0 20px #6aa9ff99;
 }
 
 .pulse-soft {

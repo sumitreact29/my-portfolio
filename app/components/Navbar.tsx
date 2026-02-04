@@ -9,7 +9,7 @@ export default function Navbar() {
       initial={{ y: -20, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.4 }}
-      className="sticky top-3 sm:top-4 z-20 flex items-center justify-between rounded-2xl px-4 sm:px-5 py-4 glass-surface"
+      className="sticky top-4 z-20 flex items-center justify-between rounded-2xl px-5 py-4 glass-surface"
     >
       {/* NAME + APPLE LOGO */}
       <div className="flex items-center gap-2 group cursor-default">

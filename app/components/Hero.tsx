@@ -64,7 +64,7 @@ export default function Hero() {
         initial={{ opacity: 0, y: 14 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.25, duration: 0.6 }}
-        className="mt-10 grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm text-white/70"
+        className="mt-10 grid grid-cols-2 gap-4 text-sm text-white/70"
       >
         <div className="glass-surface rounded-2xl px-5 py-4">
           <p className="text-white text-lg font-semibold">500K+ users</p>
@@ -73,53 +73,6 @@ export default function Hero() {
         <div className="glass-surface rounded-2xl px-5 py-4">
           <p className="text-white text-lg font-semibold">25% retention</p>
           <p className="text-white/60">Improved via AI flows</p>
-        </div>
-      </motion.div>
-
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 0.35 }}
-        className="mt-8 sm:mt-10 glass-surface rounded-2xl px-5 py-4"
-      >
-        <p className="text-xs uppercase tracking-[0.2em] text-white/50 mb-3">
-          Toolkit
-        </p>
-        <div className="overflow-hidden marquee-mask">
-          <div className="marquee gap-4 text-xs sm:text-sm text-white/70 whitespace-nowrap">
-            {[
-              "SwiftUI",
-              "LLM UX",
-              "Next.js",
-              "Cloud Functions",
-              "AI Workflows",
-              "Combine",
-              "Design Systems",
-              "Analytics",
-              "Growth Experiments",
-              "Performance",
-            ]
-              .concat([
-                "SwiftUI",
-                "LLM UX",
-                "Next.js",
-                "Cloud Functions",
-                "AI Workflows",
-                "Combine",
-                "Design Systems",
-                "Analytics",
-                "Growth Experiments",
-                "Performance",
-              ])
-              .map((item, index) => (
-                <span
-                  key={`${item}-${index}`}
-                  className="rounded-full border border-white/10 bg-white/5 px-3 py-1"
-                >
-                  {item}
-                </span>
-              ))}
-          </div>
         </div>
       </motion.div>
     </section>

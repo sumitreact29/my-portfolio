@@ -30,12 +30,10 @@ export default function ProjectCard({
         border border-white/10
         shadow-[0_20px_60px_rgba(6,10,20,0.5)]
         hover:border-white/25 transition
-        max-w-[540px] mx-auto
-        min-h-[520px]
       "
     >
       {/* IMAGE */}
-      <div className="relative h-72 lg:h-80 overflow-hidden">
+      <div className="relative h-64 overflow-hidden">
         <img
           src={image}
           alt={title}

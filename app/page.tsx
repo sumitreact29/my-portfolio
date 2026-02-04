@@ -5,11 +5,11 @@ import HeroSection from "./components/HeroSection";
 
 export default function Home() {
   return (
-    <main className="w-full px-5 sm:px-6 md:px-[50px] text-white">
+    <main className="w-full px-6 md:px-[50px] text-white">
       <HeroSection />
 
       {/* Platforms & Capabilities */}
-      <section id="about" className="w-full py-20 sm:py-24">
+      <section id="about" className="w-full py-24">
         <div className="flex flex-col gap-4 mb-12">
           <p className="text-xs uppercase tracking-[0.3em] text-white/50">
             Capabilities
@@ -44,7 +44,7 @@ export default function Home() {
           ].map((item) => (
             <div
               key={item.title}
-              className="glass-surface rounded-3xl px-6 py-7 hover:border-white/30 transition"
+              className="glass-surface rounded-3xl px-6 py-7"
             >
               <h3 className="text-lg font-semibold text-white mb-2">
                 {item.title}
@@ -61,7 +61,7 @@ export default function Home() {
       <ProjectsSection />
 
       {/* Workflow */}
-      <section className="w-full py-20 sm:py-24">
+      <section className="w-full py-24">
         <div className="grid lg:grid-cols-[1.2fr_0.8fr] gap-10 items-center">
           <div>
             <p className="text-xs uppercase tracking-[0.3em] text-white/50 mb-4">
@@ -125,7 +125,7 @@ export default function Home() {
       </section>
 
       {/* Freelance CTA */}
-      <section className="w-full py-20 sm:py-24">
+      <section className="w-full py-24">
         <div className="glass-surface rounded-[32px] px-8 py-10 md:px-12 md:py-14 flex flex-col lg:flex-row items-start lg:items-center justify-between gap-6">
           <div>
             <h2 className="text-3xl font-semibold text-white mb-3">
@@ -146,8 +146,8 @@ export default function Home() {
       </section>
 
       {/* CONTACT */}
-      <section id="contact" className="max-w-6xl mx-auto py-20 sm:py-24">
-        <div className="w-full max-w-2xl glass-surface rounded-3xl px-8 py-10">
+      <section id="contact" className="max-w-6xl mx-auto py-24">
+        <div className="max-w-xl glass-surface rounded-3xl px-8 py-10">
           <h2 className="text-3xl font-semibold mb-6 text-white">
             Let’s build something powerful
           </h2>

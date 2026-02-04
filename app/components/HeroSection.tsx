@@ -76,7 +76,6 @@ export default function HeroSection() {
       <div className="absolute inset-0 -z-10">
         <div className="absolute inset-0 mesh-bg" />
         <div className="absolute inset-0 grid-overlay opacity-70" />
-        <div className="absolute inset-0 scanlines opacity-40" />
         <div className="absolute -top-40 -left-20 h-72 w-72 rounded-full glow-orb animate-float-slow" />
         <div className="absolute top-20 right-10 h-64 w-64 rounded-full glow-orb animate-float-slow" />
         <div className="absolute bottom-[-120px] left-1/2 h-80 w-80 rounded-full glow-orb animate-float-slow" />
@@ -86,7 +85,7 @@ export default function HeroSection() {
       <div className="relative max-w-7xl mx-auto px-6 pt-6">
         <Navbar />
 
-        <div className="grid lg:grid-cols-[1.2fr_0.8fr] gap-12 items-center py-16 sm:py-20 lg:py-28">
+        <div className="grid lg:grid-cols-[1.2fr_0.8fr] gap-12 items-center py-20 lg:py-28">
           <div className="order-2 lg:order-1">
             <Hero />
           </div>
@@ -99,7 +98,6 @@ export default function HeroSection() {
             className="flex justify-center lg:justify-end order-1 lg:order-2"
           >
             <div className="relative">
-              <div className="orbit hidden sm:block" />
               <div className="absolute -inset-6 rounded-[32px] bg-gradient-to-br from-white/10 via-white/5 to-transparent blur-2xl" />
               <img
                 src="/images/profile_Sam.png"
